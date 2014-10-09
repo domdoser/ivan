@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Header</title>
+	<style>
+		header{
+		  background-image: url("animal.jpg");
+		  background-size: auto 100%;
+		  background-repeat: no-repeat;
+		  white:100%;
+		  height: 100%;
+		}
+
+		#texth {
+		  color: #FFF;
+		  text-align: center;
+		  font-size: 50px;
+		}
+
+		.nav1 {
+		  list-style: none;
+		  display: inline;
+		  margin: 0px;
+		  padding-right: 10px;
+		}
+
+		p[name="uno"],
+		p[name="dosuno"] {
+		  color:yellow;/*!important*/
+		}
+		/* inicie
+		p[name^="d"] {
+		  color:orange;
+		}
+		*/
+		/*
+		p[name$="o"] {
+		  color:red;
+		}
+		*/
+		/*
+		p[name*="o"] {
+		  color:orange;
+		}
+		*/
+
+		p:nth-child(2) {
+		  color:red;
+		}
+
+		a:nth-child(1) {/*odd-hijos primos, even-hijos pares*/
+		  color: #456356;
+		}
+
+		ul > li {/*Izquierdo padre del derecho*/
+			color: blue;
+		}
+
+		nav + p {/*Izquierdo- inmediato predecesor al derecho*/
+			color: red !important;
+		}
+
+		nav ~ p {/*cualquiera a la misma altura*/
+			color: brown;
+		}
+
+		a:link {
+			color:white;
+		}
+
+		a:hover {
+			font-size: 20px;
+		}
+
+		a:visited {
+			font-size: 1px;
+		}
+
+		a:active {
+			font-style: italic;
+			fon
+		}
+
+		p:hover{
+			font-size: 25px;
+			background-color: white;
+		}
+	</style>
+</head>
+<body style="background-color: #798798;">
+	<header>
+		<p id="texth">Bienvenido a la tienda de animales PrebeShop</p>
+	</header>
+	<nav>
+		<ul>
+			<li class="nav1"><a href="#">Articulo</a></li>
+			<li class="nav1">Ofertas</li>
+			<li class="nav1">Clinica Veterinaria</li>
+			<li class="nav1">Estetica perruna</li>
+			<li class="nav1">Contactos</li>
+
+
+
+		</ul>
+	</nav>
+	<p name="uno">hola1</p>
+	<p name="dosuno">hola2</p>
+	<p name="dilodostres">hola3</p>
+	
+	
+	<footer>
+		derechos de autor
+	</footer>
+</body>
+</html>
